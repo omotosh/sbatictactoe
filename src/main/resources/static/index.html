@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sba Tictactoe </title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+<body>
+
+<div id="main-content" class="container">
+    <div id="init-form" class="row">
+        <div class="col-md-6">
+            <form >
+                <div class="form-group">
+                    <label for="name">What is your name?</label>
+                    <input type="text" id="name" class="form-field" placeholder="Your name here...">
+                    <button id="play-game" class="btn btn-default" type="submit">Play</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="col-md-12">
+           <div id="messages-title">Messages</div>
+           <div id="join-message"></div>
+           <div id="other-message"></div>
+
+        </div>
+    </div>
+    
+ 
+    <div class="row">
+        <div class="col-md-12">
+            <table id="game-board" >
+               
+                  <tr>
+                    <td class="board-pos" id="0"></td>
+                    <td class="board-pos" id="1"></td>
+                    <td class="board-pos" id="2"></td>
+                  </tr>
+                  <tr>
+                    <td class="board-pos" id="3"></td>
+                    <td class="board-pos" id="4"></td>
+                    <td class="board-pos" id="5"></td>
+                  </tr>
+                  <tr>
+                    <td class="board-pos" id="6"></td>
+                    <td class="board-pos" id="7"></td>
+                    <td class="board-pos" id="8"></td>
+                  </tr>
+                  
+         
+
+            </table>
+        </div>
+    </div> 
+ 
+    
+</div>
+</body>
+</html>
